@@ -300,7 +300,12 @@ Python, SQL, Java, C++, Node.js, React, Machine Learning, Deep Learning, Agile, 
 
       {/* Footer */}
       <footer className="app-footer">
-        <p>© 2026 AI Hiring Intelligence Platform. Production-grade deployment version 1.0.0.</p>
+        <p>
+          © 2026 AI Hiring Intelligence Platform. Production-grade deployment version 1.0.0. 
+          <span style={{ color: 'var(--neon-rose)', marginLeft: '10px', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+            [Under Development]
+          </span>
+        </p>
       </footer>
     </div>
   );
