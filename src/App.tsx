@@ -64,8 +64,9 @@ export default function App() {
     formData.append('file', file);
     formData.append('role', roleToPredict);
 
+    const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
     try {
-      const response = await fetch('http://localhost:8000/predict', {
+      const response = await fetch(`${apiBaseUrl}/predict`, {
         method: 'POST',
         body: formData,
       });
