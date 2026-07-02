@@ -64,7 +64,7 @@ export default function App() {
     formData.append('file', file);
     formData.append('role', roleToPredict);
 
-    const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+    const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || 'https://cv-backend-6v4r.onrender.com';
     try {
       const response = await fetch(`${apiBaseUrl}/predict`, {
         method: 'POST',
